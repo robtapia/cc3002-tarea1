@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca54eb5d-6555-49df-92b4-8da748f87106" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/T1-Metodologias.iml" beforeDir="false" afterPath="$PROJECT_DIR$/T1-Metodologias.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/T1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CC3002/Tarea1/T1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CC3002/Tarea1/T1.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,7 +13,21 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="T1.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/CC3002/Tarea1/T1.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="646">
+              <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+              <folding>
+                <element signature="e#379#380#0" expanded="true" />
+                <element signature="e#413#414#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -30,6 +43,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/T1.java" />
+        <option value="$PROJECT_DIR$/src/CC3002/Tarea1/T1.java" />
       </list>
     </option>
   </component>
@@ -57,6 +71,17 @@
             <path>
               <item name="T1-Metodologias" type="b2602c69:ProjectViewProjectNode" />
               <item name="T1-Metodologias" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="T1-Metodologias" type="b2602c69:ProjectViewProjectNode" />
+              <item name="T1-Metodologias" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="T1-Metodologias" type="b2602c69:ProjectViewProjectNode" />
+              <item name="T1-Metodologias" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Tarea1" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -137,15 +162,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1539490250425</updated>
-      <workItem from="1539490254163" duration="270000" />
+      <workItem from="1539490254163" duration="3685000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="270000" />
+    <option name="totallyTimeSpent" value="3685000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -188,6 +214,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CC3002/Tarea1/T1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+          <folding>
+            <element signature="e#379#380#0" expanded="true" />
+            <element signature="e#413#414#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
