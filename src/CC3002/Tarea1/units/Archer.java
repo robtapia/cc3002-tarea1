@@ -8,9 +8,7 @@ public class Archer extends Unit {
         enemy.attackedByArcher(this);
     }
 
-    public double getAttackPoints() {
-        return this.attackPoints;
-    }
+
 
     public void attackedByInfantry(Infantry enemy){
         this.doDamage(enemy,1.2);

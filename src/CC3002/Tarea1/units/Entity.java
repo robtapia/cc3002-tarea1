@@ -11,6 +11,7 @@ public abstract class Entity implements Attackable {
         this.currentHP=initialHP;
         this.alive=true;
 
+
     }
     public double getHP(){
         return currentHP;
@@ -19,17 +20,24 @@ public abstract class Entity implements Attackable {
         return alive;
     }
     protected void doDamage(Attacker attacker,double factor){
+        double damage=attacker.getAttackPoints()*factor;
         if(!isAlive()){
             return;
         }
-        if(this.getHP()<=) {
-            currentHP=currentHP-attacker.getAttackPoints()*factor;
+        if(this.getHP()<=damage) {
+            currentHP=currentHP-damage;
         } else if(this.getHP() > this.maxHP){
             this.currentHP=this.maxHP;
         } else{
             this.currentHP=0;
             this.alive=false;
         }
+    }
+    protected void die(){
+        currentHP=0;
+        alive=false;
+
+
     }
 
 }

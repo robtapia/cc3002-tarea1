@@ -9,5 +9,7 @@ public abstract class Unit extends Entity implements Attackable, Attacker {
         this.attackPoints=attackPoints;
 
     }
-
+    public double getAttackPoints(){
+        return this.attackPoints;
+    }
 }
