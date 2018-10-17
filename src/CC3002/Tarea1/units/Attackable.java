@@ -10,6 +10,7 @@ interface Attackable {
     void attackedByVillager(Villager ally);
     void attackedByMonk(Monk ally);
     void attackedByCastle(Castle enemy);
+
     double getHP();
     boolean isAlive();
 }

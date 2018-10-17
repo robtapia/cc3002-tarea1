@@ -2,7 +2,7 @@ package CC3002.Tarea1.units;
 
 public class Castle extends Building implements Attacker{
     double attackPoints;
-    Castle(){
+    public Castle(){
         super(400);
         attackPoints=30;
     }
