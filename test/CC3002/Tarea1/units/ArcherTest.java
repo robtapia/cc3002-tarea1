@@ -18,10 +18,6 @@ public class ArcherTest {
         Archer arqueroG=new Archer();
         Archer arqueroH=new Archer();
 
-
-
-
-
         Archer arquero=new Archer();
         Barracks barraca= new Barracks();
         Castle castillo=new Castle();

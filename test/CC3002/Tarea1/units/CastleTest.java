@@ -81,7 +81,8 @@ public class CastleTest {
         assertEquals(175,catapulta.getHP(),0.01);//El castillo destruido no puede hacer daño
 
 
-
+        aldeano.attack(castilloH);
+        assertEquals(400,castilloH.getHP(),0.01);   //El castillo no puede tener mas de 400HP
         catapulta.attack(castilloH);
         assertEquals(300,castilloH.getHP(),0.01);
         aldeano.attack(castilloH);

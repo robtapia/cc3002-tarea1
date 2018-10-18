@@ -26,11 +26,13 @@ public abstract class Entity implements Attackable {
         }
         if(this.getHP()>=damage) {
             currentHP=currentHP-damage;
-        } else if(this.getHP() > this.maxHP){
-            this.currentHP=this.maxHP;
-        } else{
+        }
+        else{
             this.currentHP=0;
             this.alive=false;
+        }
+        if(this.getHP() > this.maxHP){
+            this.currentHP=this.maxHP;
         }
     }
     protected void die(){

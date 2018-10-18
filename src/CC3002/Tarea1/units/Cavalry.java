@@ -26,7 +26,7 @@ public class Cavalry extends Unit {
 
     }
     public void attackedByMonk(Monk ally) {
-        this.doDamage(ally,0.5);
+        this.doDamage(ally,-0.5);
 
     }
 
