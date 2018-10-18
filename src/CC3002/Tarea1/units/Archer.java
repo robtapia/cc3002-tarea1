@@ -4,8 +4,13 @@ public class Archer extends Unit {
     public Archer(){
         super(80,20);
     }
-    public void attack(Attackable enemy){
-        enemy.attackedByArcher(this);
+    public void attack(Attackable enemy) {
+        if (this.isAlive()) {
+            enemy.attackedByArcher(this);
+        }
+        else{
+            return;
+        }
     }
 
 

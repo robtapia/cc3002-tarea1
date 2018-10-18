@@ -40,8 +40,11 @@ public class Siege extends Unit {
     }
 
     public void attack(Attackable enemy) {
-        enemy.attackedBySiege(this);
+        if (this.isAlive()) {
+            enemy.attackedBySiege(this);
+        }
+        else{
+            return;
+        }
     }
-
-
 }

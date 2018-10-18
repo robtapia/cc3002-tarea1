@@ -2,7 +2,7 @@ package CC3002.Tarea1.units;
 
 public class Cavalry extends Unit {
     public Cavalry(){
-        super(150,70);
+        super(150,35);
     }
     public void attackedByInfantry(Infantry enemy){
         this.doDamage(enemy,1.2);
@@ -38,7 +38,12 @@ public class Cavalry extends Unit {
     }
 
     public void attack(Attackable enemy) {
-        enemy.attackedByCavalry(this);
+        if (this.isAlive()) {
+            enemy.attackedByCavalry(this);
+        }
+        else{
+            return;
+        }
     }
 
 }

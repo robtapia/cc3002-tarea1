@@ -2,7 +2,7 @@ package CC3002.Tarea1.units;
 
 public class Villager extends Unit {
     public Villager(){
-        super(50,30);
+        super(50,20);
     }
 
 
@@ -41,7 +41,12 @@ public class Villager extends Unit {
     }
 
     public void attack(Attackable enemy) {
-        enemy.attackedByVillager(this);
+        if (this.isAlive()) {
+            enemy.attackedByVillager(this);
+        }
+        else{
+            return;
+        }
     }
 
 }

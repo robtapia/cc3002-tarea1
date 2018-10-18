@@ -4,10 +4,15 @@ public class Castle extends Building implements Attacker{
     double attackPoints;
     public Castle(){
         super(400);
-        attackPoints=30;
+        attackPoints=50;
     }
-    public void attack(Attackable enemy){
-        enemy.attackedByCastle(this);
+    public void attack(Attackable enemy) {
+        if (this.isAlive()) {
+            enemy.attackedByCastle(this);
+        }
+        else{
+            return;
+        }
     }
 
 

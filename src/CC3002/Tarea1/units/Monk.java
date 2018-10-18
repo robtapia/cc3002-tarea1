@@ -39,7 +39,12 @@ public class Monk extends Unit {
     }
 
     public void attack(Attackable ally) {
-        ally.attackedByMonk(this);
+        if (this.isAlive()) {
+            ally.attackedByMonk(this);
+        }
+        else{
+            return;
+        }
     }
 
 }

@@ -29,7 +29,7 @@ public class Infantry extends Unit {
 
     }
     public void attackedByMonk(Monk ally) {
-        this.doDamage(ally,0.5);
+        this.doDamage(ally,-0.5);
 
     }
 
@@ -41,9 +41,13 @@ public class Infantry extends Unit {
     }
 
     public void attack(Attackable enemy) {
-        enemy.attackedByInfantry(this);
+        if (this.isAlive()) {
+            enemy.attackedByInfantry(this);
+        }
+        else{
+            return;
+        }
     }
-
 
 
 }
