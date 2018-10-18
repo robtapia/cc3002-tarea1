@@ -48,6 +48,8 @@ public class InfantryTest {
         castillo.attack(soldadoC);
         assertEquals(0,soldadoC.getHP(),0.01);
         assertFalse(soldadoC.isAlive());
+        soldadoC.attack(castillo);
+        assertEquals(392.5,castillo.getHP(),0.01);//El soldado esta muerto, por lo tanto no puede hacer daño
 
 
         soldadoD.attack(caballeria);
@@ -77,6 +79,8 @@ public class InfantryTest {
 
         soldadoH.attack(aldeano);
         aldeano.attack(soldadoH);
+        assertEquals(84,soldadoH.getHP(),0.01);
+        assertEquals(12.5,aldeano.getHP(),0.01);
 
 
 
