@@ -24,7 +24,7 @@ public abstract class Entity implements Attackable {
         if(!isAlive()){
             return;
         }
-        if(this.getHP()>=damage) {
+        if(this.getHP()>damage) {
             currentHP=currentHP-damage;
         }
         else{
