@@ -34,7 +34,7 @@ public class Monk extends Unit {
 
 
     public void attackedByCastle(Castle enemy) {
-        this.doDamage(enemy,0.5);
+        this.die();
 
     }
 

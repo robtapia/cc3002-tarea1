@@ -33,7 +33,7 @@ public class Cavalry extends Unit {
 
 
     public void attackedByCastle(Castle enemy) {
-        this.doDamage(enemy,0.5);
+        this.doDamage(enemy,1.2);
 
     }
 

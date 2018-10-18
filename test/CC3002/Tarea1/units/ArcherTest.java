@@ -52,7 +52,7 @@ public class ArcherTest {
         assertEquals(0,arqueroC.getHP(),0.01);
         assertFalse(arqueroC.isAlive());
         arqueroC.attack(castillo);
-        assertEquals(398,castillo.getHP(),0.01);//El soldado esta muerto, por lo tanto no puede hacer daño
+        assertEquals(398,castillo.getHP(),0.01);//El arquero esta muerto, por lo tanto no puede hacer daño
 
 
         arqueroD.attack(caballeria);
@@ -71,7 +71,7 @@ public class ArcherTest {
         assertEquals(90,arqueroF.getHP(),0.01);
         assertEquals(0,monje.getHP(),0.01);
         assertFalse(monje.isAlive());
-        monje.attack(arqueroF);             //Una vez el monje ha muerto, no puede curar al soldado
+        monje.attack(arqueroF);             //Una vez el monje ha muerto, no puede curar al arquero
         assertEquals(90,arqueroF.getHP(),0.01);
 
 
