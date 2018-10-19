@@ -6,86 +6,99 @@ import static org.junit.Assert.*;
 
 public class ArcherTest {
 
-
     @Test
-    public void ArcherAttackTest() {
+    public void ArcherCreationTest(){
+        Archer arquero=new Archer();
+        assertEquals(80,arquero.getHP(),0.01);
+        assertEquals(20,arquero.getAttackPoints(),0.01);
+    }
+    @Test
+    public void ArcherVSArcherTest(){
         Archer arqueroA=new Archer();
         Archer arqueroB=new Archer();
-        Archer arqueroC=new Archer();
-        Archer arqueroD=new Archer();
-        Archer arqueroE=new Archer();
-        Archer arqueroF=new Archer();
-        Archer arqueroG=new Archer();
-        Archer arqueroH=new Archer();
-
-        Archer arquero=new Archer();
-        Barracks barraca= new Barracks();
-        Castle castillo=new Castle();
-        Cavalry caballeria=new Cavalry();
-        Infantry soldado=new Infantry();
-        Monk monje=new Monk();
-        Siege catapulta=new Siege();
-        Villager aldeano=new Villager();
-
-
-        assertEquals(80,arqueroA.getHP(),0.01);
-        assertEquals(20,arqueroA.getAttackPoints(),0.01);
-
-        arqueroA.attack(arquero);
-        arquero.attack(arqueroA);
+        arqueroA.attack(arqueroB);
+        arqueroB.attack(arqueroA);
         assertEquals(56,arqueroA.getHP(),0.01);
-        assertEquals(56,arquero.getHP(),0.01);
-
-        arqueroB.attack(barraca);
+        assertEquals(56,arqueroB.getHP(),0.01);
+    }
+    @Test
+    public void ArcherVSBarracksTest(){
+        Archer arquero=new Archer();
+        Barracks barraca=new Barracks();
+        arquero.attack(barraca);
         //
         assertEquals(286,barraca.getHP(),0.01);
-
-        arqueroC.attack(castillo);
-        castillo.attack(arqueroC);
-        assertEquals(20,arqueroC.getHP(),0.01);
+    }
+    @Test
+    public void ArcherVSCastleTest(){
+        Archer arquero=new Archer();
+        Castle castillo=new Castle();
+        arquero.attack(castillo);
+        castillo.attack(arquero);
+        assertEquals(20,arquero.getHP(),0.01);
         assertEquals(398,castillo.getHP(),0.01);
-        castillo.attack(arqueroC);
-        assertEquals(0,arqueroC.getHP(),0.01);
-        assertFalse(arqueroC.isAlive());
-        arqueroC.attack(castillo);
-        assertEquals(398,castillo.getHP(),0.01);//El arquero esta muerto, por lo tanto no puede hacer daño
-
-
-        arqueroD.attack(caballeria);
-        caballeria.attack(arqueroD);
-        assertEquals(27.5,arqueroD.getHP(),0.01);
-        assertEquals(130,caballeria.getHP(),0.01);
-
-
-        arqueroE.attack(soldado);
-        soldado.attack(arqueroE);
-        assertEquals(50,arqueroE.getHP(),0.01);
-        assertEquals(76,soldado.getHP(),0.01);
-
-        monje.attack(arqueroF);
-        arqueroF.attack(monje);
-        assertEquals(90,arqueroF.getHP(),0.01);
-        assertEquals(0,monje.getHP(),0.01);
-        assertFalse(monje.isAlive());
-        monje.attack(arqueroF);             //Una vez el monje ha muerto, no puede curar al arquero
-        assertEquals(90,arqueroF.getHP(),0.01);
-
-
-        arqueroG.attack(catapulta);
-        catapulta.attack(arqueroG);
-        assertEquals(5,arqueroG.getHP(),0.01);
-        assertEquals(184,catapulta.getHP(),0.01);
-
-        arqueroH.attack(aldeano);
-        aldeano.attack(arqueroH);
-        assertEquals(60,arqueroH.getHP(),0.01);
-        assertEquals(20,aldeano.getHP(),0.01);
-
-
-
-
-
 
     }
+    @Test
+    public void ArcherVSCavalryTest(){
+        Archer arquero=new Archer();
+        Cavalry caballero=new Cavalry();
+        arquero.attack(caballero);
+        caballero.attack(arquero);
+        assertEquals(27.5,arquero.getHP(),0.01);
+        assertEquals(130,caballero.getHP(),0.01);
+
+    }
+    @Test
+    public void ArcherVSInfantryTest(){
+        Archer arquero=new Archer();
+        Infantry soldado=new Infantry();
+        arquero.attack(soldado);
+        soldado.attack(arquero);
+        assertEquals(50,arquero.getHP(),0.01);
+        assertEquals(76,soldado.getHP(),0.01);
+    }
+    @Test
+    public void ArcherVSMonkTest(){
+        Monk monje=new Monk();
+        Archer arquero=new Archer();
+        monje.attack(arquero);
+        arquero.attack(monje);
+        assertEquals(90,arquero.getHP(),0.01);
+        assertEquals(0,monje.getHP(),0.01);
+    }
+    @Test
+    public void ArcherVSSiegeTest(){
+        Archer arquero=new Archer();
+        Siege catapulta=new Siege();
+        arquero.attack(catapulta);
+        catapulta.attack(arquero);
+        assertEquals(5,arquero.getHP(),0.01);
+        assertEquals(184,catapulta.getHP(),0.01);
+    }
+    @Test
+    public void ArcherVSVillagerTest(){
+        Archer arquero=new Archer();
+        Villager aldeano=new Villager();
+        arquero.attack(aldeano);
+        aldeano.attack(arquero);
+        assertEquals(60,arquero.getHP(),0.01);
+        assertEquals(20,aldeano.getHP(),0.01);
+    }
+    @Test
+    public void ArcherDead(){
+        Archer arquero=new Archer();
+        Castle castillo=new Castle();
+        arquero.attack(castillo);
+        castillo.attack(arquero);
+        assertEquals(20,arquero.getHP(),0.01);
+        assertEquals(398,castillo.getHP(),0.01);
+        castillo.attack(arquero);
+        assertEquals(0,arquero.getHP(),0.01);
+        assertFalse(arquero.isAlive());
+        arquero.attack(castillo);
+        assertEquals(398,castillo.getHP(),0.01);//El arquero esta muerto, por lo tanto no puede hacer daño
+    }
+
 
 }

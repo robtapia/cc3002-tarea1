@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca54eb5d-6555-49df-92b4-8da748f87106" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/test/CC3002/Tarea1/units/MonkTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CC3002/Tarea1/units/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CC3002/Tarea1/units/Entity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/CC3002/Tarea1/units/ArcherTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/CC3002/Tarea1/units/ArcherTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,19 +14,37 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/T1_Metodologias$ArcherTest_ArcherAttackTest.ic" NAME="ArcherTest.ArcherAttackTest Coverage Results" MODIFIED="1539888464433" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>CC3002.Tarea1.units.*</FILTER>
-    </SUITE>
     <SUITE FILE_PATH="coverage/T1_Metodologias$BarracksTest.ic" NAME="BarracksTest Coverage Results" MODIFIED="1539880772427" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>CC3002.Tarea1.units.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/T1_Metodologias$CastleTest.ic" NAME="CastleTest Coverage Results" MODIFIED="1539881989477" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>CC3002.Tarea1.units.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/T1_Metodologias$CastleTest_CastleAttackTest.ic" NAME="CastleTest.CastleAttackTest Coverage Results" MODIFIED="1539890014787" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/T1_Metodologias$ArcherTest_ArcherDead.ic" NAME="ArcherTest.ArcherDead Coverage Results" MODIFIED="1539914243741" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>CC3002.Tarea1.units.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/T1_Metodologias$MonkTest.ic" NAME="MonkTest Coverage Results" MODIFIED="1539891946063" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>CC3002.Tarea1.units.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/T1_Metodologias$ArcherTest_ArcherVSVillagerTest.ic" NAME="ArcherTest.ArcherVSVillagerTest Coverage Results" MODIFIED="1539914439942" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>CC3002.Tarea1.units.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/T1_Metodologias$ArcherTest_ArcherVSBarracksTest.ic" NAME="ArcherTest.ArcherVSBarracksTest Coverage Results" MODIFIED="1539914106618" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>CC3002.Tarea1.units.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/T1_Metodologias$InfantryTest_infantryTest.ic" NAME="InfantryTest.infantryTest Coverage Results" MODIFIED="1539832958488" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>CC3002.Tarea1.units.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/T1_Metodologias$ArcherTest_ArcherAttackTest.ic" NAME="ArcherTest.ArcherAttackTest Coverage Results" MODIFIED="1539888464433" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>CC3002.Tarea1.units.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/T1_Metodologias$ArcherTest.ic" NAME="ArcherTest Coverage Results" MODIFIED="1539914489076" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>CC3002.Tarea1.units.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/T1_Metodologias$ArcherTest_ArcherVSArcherTest.ic" NAME="ArcherTest.ArcherVSArcherTest Coverage Results" MODIFIED="1539914457006" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>CC3002.Tarea1.units.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/T1_Metodologias$CastleTest_CastleAttackTest.ic" NAME="CastleTest.CastleAttackTest Coverage Results" MODIFIED="1539890014787" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>CC3002.Tarea1.units.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/T1_Metodologias$CavalryTest_CavalryAttackTest.ic" NAME="CavalryTest.CavalryAttackTest Coverage Results" MODIFIED="1539889897271" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
@@ -36,13 +53,10 @@
     <SUITE FILE_PATH="coverage/T1_Metodologias$InfantryTest.ic" NAME="InfantryTest Coverage Results" MODIFIED="1539832463732" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>CC3002.Tarea1.units.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/T1_Metodologias$CC3002_Tarea1_units_in_T1_Metodologias.ic" NAME="CC3002.Tarea1.units in T1-Metodologias Coverage Results" MODIFIED="1539892191288" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/T1_Metodologias$CC3002_Tarea1_units_in_T1_Metodologias.ic" NAME="CC3002.Tarea1.units in T1-Metodologias Coverage Results" MODIFIED="1539914294766" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>CC3002.Tarea1.units.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/T1_Metodologias$InfantryTest_infantryAttackTest.ic" NAME="InfantryTest.infantryAttackTest Coverage Results" MODIFIED="1539880797863" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>CC3002.Tarea1.units.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/T1_Metodologias$InfantryTest_infantryTest.ic" NAME="InfantryTest.infantryTest Coverage Results" MODIFIED="1539832958488" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>CC3002.Tarea1.units.*</FILTER>
     </SUITE>
   </component>
@@ -86,7 +100,7 @@
       <file leaf-file-name="InfantryTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/CC3002/Tarea1/units/InfantryTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-110">
+            <state relative-caret-position="612">
               <caret line="38" selection-end-line="91" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -95,11 +109,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ArcherTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ArcherTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/CC3002/Tarea1/units/ArcherTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="29" selection-start-line="29" selection-end-line="29" />
+            <state relative-caret-position="221">
+              <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -107,11 +121,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Entity.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Entity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/CC3002/Tarea1/units/Entity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="25" column="9" lean-forward="true" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+            <state relative-caret-position="323">
+              <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -137,8 +151,8 @@
       <file leaf-file-name="CastleTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/CC3002/Tarea1/units/CastleTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+            <state relative-caret-position="493">
+              <caret line="31" selection-start-line="31" selection-end-line="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -149,8 +163,8 @@
       <file leaf-file-name="MonkTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/CC3002/Tarea1/units/MonkTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="626">
-              <caret line="88" lean-forward="true" selection-start-line="88" selection-end-line="88" />
+            <state relative-caret-position="1462">
+              <caret line="88" selection-start-line="88" selection-end-line="88" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -161,8 +175,8 @@
       <file leaf-file-name="CavalryTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/CC3002/Tarea1/units/CavalryTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="92" selection-end-column="1" />
+            <state relative-caret-position="578">
+              <caret line="34" column="35" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -182,8 +196,8 @@
       <file leaf-file-name="Cavalry.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/CC3002/Tarea1/units/Cavalry.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="102">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
               <folding>
                 <element signature="e#86#87#0" expanded="true" />
                 <element signature="e#115#116#0" expanded="true" />
@@ -245,10 +259,10 @@
         <option value="$PROJECT_DIR$/src/CC3002/Tarea1/units/Monk.java" />
         <option value="$PROJECT_DIR$/src/CC3002/Tarea1/units/Cavalry.java" />
         <option value="$PROJECT_DIR$/test/CC3002/Tarea1/units/CavalryTest.java" />
-        <option value="$PROJECT_DIR$/test/CC3002/Tarea1/units/ArcherTest.java" />
         <option value="$PROJECT_DIR$/test/CC3002/Tarea1/units/CastleTest.java" />
         <option value="$PROJECT_DIR$/test/CC3002/Tarea1/units/MonkTest.java" />
         <option value="$PROJECT_DIR$/src/CC3002/Tarea1/units/Entity.java" />
+        <option value="$PROJECT_DIR$/test/CC3002/Tarea1/units/ArcherTest.java" />
       </list>
     </option>
   </component>
@@ -258,7 +272,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="953" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
@@ -268,6 +282,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -323,8 +339,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -364,14 +378,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CC3002.Tarea1.units in T1-Metodologias">
+  <component name="RunManager" selected="JUnit.ArcherTest">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method>
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ArcherTest.ArcherAttackTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ArcherTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="T1-Metodologias" />
       <extension name="coverage">
         <pattern>
@@ -383,7 +397,76 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="CC3002.Tarea1.units" />
       <option name="MAIN_CLASS_NAME" value="CC3002.Tarea1.units.ArcherTest" />
-      <option name="METHOD_NAME" value="ArcherAttackTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="ArcherTest.ArcherDead" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="T1-Metodologias" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="CC3002.Tarea1.units.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="CC3002.Tarea1.units" />
+      <option name="MAIN_CLASS_NAME" value="CC3002.Tarea1.units.ArcherTest" />
+      <option name="METHOD_NAME" value="ArcherDead" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="ArcherTest.ArcherVSArcherTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="T1-Metodologias" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="CC3002.Tarea1.units.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="CC3002.Tarea1.units" />
+      <option name="MAIN_CLASS_NAME" value="CC3002.Tarea1.units.ArcherTest" />
+      <option name="METHOD_NAME" value="ArcherVSArcherTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="ArcherTest.ArcherVSVillagerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="T1-Metodologias" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="CC3002.Tarea1.units.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="CC3002.Tarea1.units" />
+      <option name="MAIN_CLASS_NAME" value="CC3002.Tarea1.units.ArcherTest" />
+      <option name="METHOD_NAME" value="ArcherVSVillagerTest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
       <option name="PARAMETERS" />
@@ -408,75 +491,6 @@
       <option name="MAIN_CLASS_NAME" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="package" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="CastleTest.CastleAttackTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="T1-Metodologias" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="CC3002.Tarea1.units.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="CC3002.Tarea1.units" />
-      <option name="MAIN_CLASS_NAME" value="CC3002.Tarea1.units.CastleTest" />
-      <option name="METHOD_NAME" value="CastleAttackTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="CavalryTest.CavalryAttackTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="T1-Metodologias" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="CC3002.Tarea1.units.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="CC3002.Tarea1.units" />
-      <option name="MAIN_CLASS_NAME" value="CC3002.Tarea1.units.CavalryTest" />
-      <option name="METHOD_NAME" value="CavalryAttackTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="MonkTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="T1-Metodologias" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="CC3002.Tarea1.units.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="CC3002.Tarea1.units" />
-      <option name="MAIN_CLASS_NAME" value="CC3002.Tarea1.units.MonkTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -532,18 +546,18 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.CC3002.Tarea1.units in T1-Metodologias" />
-      <item itemvalue="JUnit.CastleTest.CastleAttackTest" />
-      <item itemvalue="JUnit.CavalryTest.CavalryAttackTest" />
-      <item itemvalue="JUnit.ArcherTest.ArcherAttackTest" />
-      <item itemvalue="JUnit.MonkTest" />
+      <item itemvalue="JUnit.ArcherTest.ArcherDead" />
+      <item itemvalue="JUnit.ArcherTest.ArcherVSVillagerTest" />
+      <item itemvalue="JUnit.ArcherTest.ArcherVSArcherTest" />
+      <item itemvalue="JUnit.ArcherTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ArcherTest" />
+        <item itemvalue="JUnit.ArcherTest.ArcherVSArcherTest" />
+        <item itemvalue="JUnit.ArcherTest.ArcherVSVillagerTest" />
         <item itemvalue="JUnit.CC3002.Tarea1.units in T1-Metodologias" />
-        <item itemvalue="JUnit.MonkTest" />
-        <item itemvalue="JUnit.CastleTest.CastleAttackTest" />
-        <item itemvalue="JUnit.CavalryTest.CavalryAttackTest" />
-        <item itemvalue="JUnit.ArcherTest.ArcherAttackTest" />
+        <item itemvalue="JUnit.ArcherTest.ArcherDead" />
       </list>
     </recent_temporary>
   </component>
@@ -566,23 +580,12 @@
       <workItem from="1539830665500" duration="5787000" />
       <workItem from="1539876567269" duration="5653000" />
       <workItem from="1539887746439" duration="79000" />
-      <workItem from="1539887840209" duration="3646000" />
+      <workItem from="1539887840209" duration="3743000" />
+      <workItem from="1539911955873" duration="2160000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CC3002_Tarea1_units_in_T1-Metodologias - 2018.10.18 at 15h 50m 37s.xml">
-      <configuration name="CC3002.Tarea1.units in T1-Metodologias" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CastleTest_CastleAttackTest - 2018.10.18 at 15h 51m 29s.xml">
-      <configuration name="CastleTest.CastleAttackTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CastleTest_CastleAttackTest - 2018.10.18 at 15h 53m 39s.xml">
-      <configuration name="CastleTest.CastleAttackTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CastleTest_CastleAttackTest - 2018.10.18 at 16h 11m 06s.xml">
-      <configuration name="CastleTest.CastleAttackTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="CC3002_Tarea1_units_in_T1-Metodologias - 2018.10.18 at 16h 11m 11s.xml">
       <configuration name="CC3002.Tarea1.units in T1-Metodologias" configurationId="JUnit" />
     </history-entry>
@@ -601,12 +604,25 @@
     <history-entry file="CC3002_Tarea1_units_in_T1-Metodologias - 2018.10.18 at 16h 45m 51s.xml">
       <configuration name="CC3002.Tarea1.units in T1-Metodologias" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="CC3002_Tarea1_units_in_T1-Metodologias - 2018.10.18 at 16h 49m 51s.xml">
+      <configuration name="CC3002.Tarea1.units in T1-Metodologias" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ArcherTest_ArcherVSBarracksTest - 2018.10.18 at 22h 55m 07s.xml">
+      <configuration name="ArcherTest.ArcherVSBarracksTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ArcherTest_ArcherDead - 2018.10.18 at 22h 57m 24s.xml">
+      <configuration name="ArcherTest.ArcherDead" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CC3002_Tarea1_units_in_T1-Metodologias - 2018.10.18 at 22h 58m 15s.xml">
+      <configuration name="CC3002.Tarea1.units in T1-Metodologias" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38959000" />
+    <option name="totallyTimeSpent" value="41216000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
@@ -627,19 +643,52 @@
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Run" order="3" visible="true" weight="0.31987247" />
-      <window_info anchor="right" id="Coverage" order="9" side_tool="true" visible="true" weight="0.29166666" />
+      <window_info active="true" anchor="right" id="Coverage" order="9" side_tool="true" visible="true" weight="0.29166666" />
       <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19114584" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13697916" />
       <window_info id="Learn" order="2" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Find" order="2" weight="0.32943678" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.32943678" />
     </layout>
+    <layout-to-restore>
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="Designer" order="4" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32624868" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info id="Image Layers" order="3" />
+      <window_info anchor="bottom" id="Run" order="3" visible="true" weight="0.31987247" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="right" id="Coverage" order="9" side_tool="true" visible="true" weight="0.29166666" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Statistic" order="0" weight="0.32943678" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="right" id="Maven Projects" order="8" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19114584" />
+      <window_info id="Learn" order="2" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="TODO" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.32943678" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -713,9 +762,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -990,7 +1036,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/CC3002/Tarea1/units/InfantryTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-110">
+        <state relative-caret-position="612">
           <caret line="38" selection-end-line="91" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1000,21 +1046,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/CC3002/Tarea1/units/Cavalry.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="102">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
           <folding>
             <element signature="e#86#87#0" expanded="true" />
             <element signature="e#115#116#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/CC3002/Tarea1/units/ArcherTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1028,38 +1064,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/CC3002/Tarea1/units/CastleTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+        <state relative-caret-position="493">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/CC3002/Tarea1/units/CavalryTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="92" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/CC3002/Tarea1/units/MonkTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="626">
-          <caret line="88" lean-forward="true" selection-start-line="88" selection-end-line="88" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CC3002/Tarea1/units/Archer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -1070,10 +1079,47 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test/CC3002/Tarea1/units/MonkTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1462">
+          <caret line="88" selection-start-line="88" selection-end-line="88" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/CC3002/Tarea1/units/Entity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="25" column="9" lean-forward="true" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+        <state relative-caret-position="323">
+          <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CC3002/Tarea1/units/Archer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/CC3002/Tarea1/units/CavalryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="34" column="35" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/CC3002/Tarea1/units/ArcherTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
