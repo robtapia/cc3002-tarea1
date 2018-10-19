@@ -15,7 +15,16 @@ public class BarracksTest {
     }
     @Test
     public void BarrackDeathTest(){
+        Barracks barraca=new Barracks();
+        Siege catapulta=new Siege();
+        Villager aldeano=new Villager();
 
+        catapulta.attack(barraca);
+        catapulta.attack(barraca);
+        catapulta.attack(barraca);
+        assertEquals(0,barraca.getHP(),0.01);
+        aldeano.attack(barraca);
+        assertEquals(0,barraca.getHP(),0.01);
     }
 
 }

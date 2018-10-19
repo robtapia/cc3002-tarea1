@@ -87,42 +87,103 @@ public class CavalryTest {
     }
     @Test
     public void CavalryCreationTest(){
+        Cavalry caballero=new Cavalry();
+        assertEquals(150,caballero.getHP(),0.01);
+        assertEquals(35,caballero.getAttackPoints(),0.01);
 
     }
     @Test
     public void CavalryVsArcherTest(){
+        Cavalry caballero=new Cavalry();
+        Archer arquero=new Archer();
+        caballero.attack(arquero);
+        arquero.attack(caballero);
+        assertEquals(130,caballero.getHP(),0.01);
+        assertEquals(27.5,arquero.getHP(),0.01);
 
     }
     @Test
     public void CavalryVSBarracksTest(){
+        Cavalry caballero=new Cavalry();
+        Barracks barraca =new Barracks();
+        caballero.attack(barraca);
+        //
+        assertEquals(275.5,barraca.getHP(),0.01);
 
     }
     @Test
     public void CavalryVSCastleTest(){
-
+        Cavalry caballero=new Cavalry();
+        Castle castillo = new Castle();
+        caballero.attack(castillo);
+        castillo.attack(caballero);
+        assertEquals(90,caballero.getHP(),0.01);
+        assertEquals(389.5,castillo.getHP(),0.01);
     }
     @Test
     public void CavalryVSCavalryTest(){
+        Cavalry caballero=new Cavalry();
+        Cavalry otroCaballero=new Cavalry();
+        caballero.attack(otroCaballero);
+        otroCaballero.attack(caballero);
+        assertEquals(115,caballero.getHP(),0.01);
+        assertEquals(115,otroCaballero.getHP(),0.01);
 
     }
     @Test
     public void CavalryVSInfantryTest(){
-
+        Cavalry caballero=new Cavalry();
+        Infantry soldado=new Infantry();
+        caballero.attack(soldado);
+        soldado.attack(caballero);
+        assertEquals(120,caballero.getHP(),0.01);
+        assertEquals(65,soldado.getHP(),0.01);
     }
     @Test
     public void CavalryVSMonkTest(){
+        Cavalry caballero=new Cavalry();
+        Monk monje=new Monk();
+        monje.attack(caballero);
+        caballero.attack(monje);
+        assertEquals(160,caballero.getHP(),0.01);
+        assertEquals(0,monje.getHP(),0.01);
+        assertFalse(monje.isAlive());
 
     }
     @Test
     public void CavalryVSSiegeTest(){
-
+        Cavalry caballero=new Cavalry();
+        Siege catapulta=new Siege();
+        caballero.attack(catapulta);
+        catapulta.attack(caballero);
+        assertEquals(100,caballero.getHP(),0.01);
+        assertEquals(158,catapulta.getHP(),0.01);
     }
     @Test
     public void CavalryVSVillager(){
+        Cavalry caballero=new Cavalry();
+        Villager aldeano=new Villager();
+        aldeano.attack(caballero);
+        caballero.attack(aldeano);
+        assertEquals(140,caballero.getHP(),0.01);
+        assertEquals(0,aldeano.getHP(),0.01);
 
     }
     @Test
     public void CavalryDeathTest(){
+        Cavalry caballero=new Cavalry();
+        Monk monje=new Monk();
+        Siege catapulta=new Siege();
+        catapulta.attack(caballero);
+        catapulta.attack(caballero);
+        catapulta.attack(caballero);
+        assertFalse(caballero.isAlive());
+        assertEquals(0,caballero.getHP(),0.01);
+        monje.attack(caballero);
+        assertFalse(caballero.isAlive());
+        assertEquals(0,caballero.getHP(),0.01);
+        caballero.attack(monje);
+        assertEquals(40,monje.getHP(),0.01);
 
     }
 
