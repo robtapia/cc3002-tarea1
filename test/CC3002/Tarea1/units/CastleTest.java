@@ -92,5 +92,45 @@ public class CastleTest {
 
 
     }
+    @Test
+    public void CastleCreationTest(){
+
+    }
+    @Test
+    public void CastleVsArcherTest(){
+
+    }
+    @Test
+    public void CastleVSBarracksTest(){
+
+    }
+    @Test
+    public void CastleVSCastleTest(){
+
+    }
+    @Test
+    public void CastleVSCavalryTest(){
+
+    }
+    @Test
+    public void CastleVSInfantryTest(){
+
+    }
+    @Test
+    public void CastleVSMonkTest(){
+
+    }
+    @Test
+    public void CastleVSSiegeTest(){
+
+    }
+    @Test
+    public void CastleVSVillager(){
+
+    }
+    @Test
+    public void CastleDeathTest(){
+
+    }
 
 }

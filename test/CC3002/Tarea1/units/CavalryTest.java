@@ -84,9 +84,45 @@ public class CavalryTest {
         assertEquals(0,aldeano.getHP(),0.01);
 
 
+    }
+    @Test
+    public void CavalryCreationTest(){
 
+    }
+    @Test
+    public void CavalryVsArcherTest(){
 
+    }
+    @Test
+    public void CavalryVSBarracksTest(){
 
+    }
+    @Test
+    public void CavalryVSCastleTest(){
+
+    }
+    @Test
+    public void CavalryVSCavalryTest(){
+
+    }
+    @Test
+    public void CavalryVSInfantryTest(){
+
+    }
+    @Test
+    public void CavalryVSMonkTest(){
+
+    }
+    @Test
+    public void CavalryVSSiegeTest(){
+
+    }
+    @Test
+    public void CavalryVSVillager(){
+
+    }
+    @Test
+    public void CavalryDeathTest(){
 
     }
 

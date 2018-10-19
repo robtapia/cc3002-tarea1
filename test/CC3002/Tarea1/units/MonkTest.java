@@ -86,5 +86,45 @@ public class MonkTest {
 
 
     }
+    @Test
+    public void MonkCreationTest(){
+
+    }
+    @Test
+    public void MonkVsArcherTest(){
+
+    }
+    @Test
+    public void MonkVSBarracksTest(){
+
+    }
+    @Test
+    public void MonkVSCastleTest(){
+
+    }
+    @Test
+    public void MonkVSCavalryTest(){
+
+    }
+    @Test
+    public void MonkVSInfantryTest(){
+
+    }
+    @Test
+    public void MonkVSMonkTest(){
+
+    }
+    @Test
+    public void MonkVSSiegeTest(){
+
+    }
+    @Test
+    public void MonkVSVillager(){
+
+    }
+    @Test
+    public void MonkDeathTest(){
+
+    }
 
 }
