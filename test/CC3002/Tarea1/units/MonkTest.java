@@ -88,43 +88,105 @@ public class MonkTest {
     }
     @Test
     public void MonkCreationTest(){
-
+        Monk monje=new Monk();
+        assertEquals(40,monje.getHP(),0.01);
+        assertEquals(20,monje.getAttackPoints(),0.01);
     }
     @Test
     public void MonkVsArcherTest(){
-
+        Monk monje=new Monk();
+        Archer arquero=new Archer();
+        monje.attack(arquero);
+        arquero.attack(monje);
+        assertEquals(0,monje.getHP(),0.01);
+        assertEquals(90,arquero.getHP(),0.01);
     }
     @Test
     public void MonkVSBarracksTest(){
-
+        Monk monje=new Monk();
+        Barracks barraca=new Barracks();
+        monje.attack(barraca);
+        //
+        assertEquals(300,barraca.getHP(),0.01);
     }
     @Test
     public void MonkVSCastleTest(){
+        Monk monje=new Monk();
+        Castle castillo=new Castle();
+        monje.attack(castillo);
+        castillo.attack(monje);
+        assertEquals(0,monje.getHP(),0.01);
+        assertEquals(400,castillo.getHP(),0.01);
+        assertFalse(monje.isAlive());
 
     }
     @Test
     public void MonkVSCavalryTest(){
-
+        Monk monje=new Monk();
+        Cavalry caballeria=new Cavalry();
+        monje.attack(caballeria);
+        caballeria.attack(monje);
+        assertEquals(0,monje.getHP(),0.01);
+        assertEquals(160,caballeria.getHP(),0.01);
     }
     @Test
     public void MonkVSInfantryTest(){
-
+        Monk monje=new Monk();
+        Infantry soldado=new Infantry();
+        monje.attack(soldado);
+        soldado.attack(monje);
+        assertEquals(0,monje.getHP(),0.01);
+        assertEquals(110,soldado.getHP(),0.01);
     }
     @Test
     public void MonkVSMonkTest(){
+        Monk monje=new Monk();
+        Monk otroMonje=new Monk();
+        otroMonje.attack(monje);
+        monje.attack(otroMonje);
+        assertEquals(50,monje.getHP(),0.01);
+        assertEquals(50,otroMonje.getHP(),0.01);
+        otroMonje.attack(monje);
+        assertEquals(60,monje.getHP(),0.01);
+        otroMonje.attack(monje);
+        assertEquals(70,monje.getHP(),0.01);
+        otroMonje.attack(monje);
+        assertEquals(80,monje.getHP(),0.01);
+        otroMonje.attack(monje);
+        assertEquals(80,monje.getHP(),0.01); //las unidades no pueden tener mas de dos veces sus HP originales.
 
     }
     @Test
     public void MonkVSSiegeTest(){
-
+        Monk monje=new Monk();
+        Siege catapulta=new Siege();
+        monje.attack(catapulta);
+        catapulta.attack(monje);
+        assertEquals(0,monje.getHP(),0.01);
+        assertEquals(200,catapulta.getHP(),0.01);
     }
     @Test
     public void MonkVSVillager(){
-
+        Monk monje=new Monk();
+        Villager aldeano=new Villager();
+        aldeano.attack(monje);
+        monje.attack(aldeano);
+        assertEquals(40,monje.getHP(),0.01);
+        assertEquals(60,aldeano.getHP(),0.01);
     }
     @Test
     public void MonkDeathTest(){
-
+        Monk monje=new Monk();
+        Infantry soldado=new Infantry();
+        Monk otroMonje=new Monk();
+        soldado.attack(monje);
+        assertEquals(0,monje.getHP(),0.01);
+        assertFalse(monje.isAlive());
+        otroMonje.attack(monje);
+        assertEquals(0,monje.getHP(),0.01);
+        assertFalse(monje.isAlive());
+        monje.attack(soldado);
+        assertEquals(100,soldado.getHP(),0.01);
     }
 
 }
