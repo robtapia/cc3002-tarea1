@@ -26,7 +26,6 @@ public class Villager extends Unit {
 
     public void attackedByVillager(Villager enemy) {
         this.doDamage(enemy,1);
-
     }
     public void attackedByMonk(Monk ally) {
         this.doDamage(ally,-0.5);
