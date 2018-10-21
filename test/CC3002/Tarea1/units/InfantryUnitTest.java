@@ -4,17 +4,17 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class InfantryTest {
+public class InfantryUnitTest {
     @Test
-    public void InfantryCreationTest(){
-        Infantry soldado=new Infantry();
+    public void InfantryUnitCreationTest(){
+        InfantryUnit soldado=new InfantryUnit();
         assertEquals(100,soldado.getHP(),0.01);
         assertEquals(25,soldado.getAttackPoints(),0.01);
     }
     @Test
-    public void InfantryVsArcherTest(){
-        Infantry soldado=new Infantry();
-        Archer arquero=new Archer();
+    public void InfantryUnitVsArcherUnitTest(){
+        InfantryUnit soldado=new InfantryUnit();
+        ArcherUnit arquero=new ArcherUnit();
         soldado.attack(arquero);
         arquero.attack(soldado);
         assertEquals(76,soldado.getHP(),0.01);
@@ -22,15 +22,15 @@ public class InfantryTest {
 
     }
     @Test
-    public void InfantryVSBarracksTest(){
-        Infantry soldado=new Infantry();
+    public void InfantryUnitVSBarracksTest(){
+        InfantryUnit soldado=new InfantryUnit();
         Barracks barraca=new Barracks();
         soldado.attack(barraca);
         assertEquals(282.5,barraca.getHP(),0.01);
     }
     @Test
-    public void InfantryVSCastleTest(){
-        Infantry soldado=new Infantry();
+    public void InfantryUnitVSCastleTest(){
+        InfantryUnit soldado=new InfantryUnit();
         Castle castillo=new Castle();
         soldado.attack(castillo);
         castillo.attack(soldado);
@@ -38,9 +38,9 @@ public class InfantryTest {
         assertEquals(392.5,castillo.getHP(),0.01);
     }
     @Test
-    public void InfantryVSCavalryTest(){
-        Infantry soldado=new Infantry();
-        Cavalry caballero=new Cavalry();
+    public void InfantryUnitVSCavalryUnitTest(){
+        InfantryUnit soldado=new InfantryUnit();
+        CavalryUnit caballero=new CavalryUnit();
         soldado.attack(caballero);
         caballero.attack(soldado);
         assertEquals(65,soldado.getHP(),0.01);
@@ -48,17 +48,17 @@ public class InfantryTest {
 
     }
     @Test
-    public void InfantryVSInfantryTest(){
-        Infantry soldado=new Infantry();
-        Infantry otroSoldado=new Infantry();
+    public void InfantryUnitVSInfantryUnitTest(){
+        InfantryUnit soldado=new InfantryUnit();
+        InfantryUnit otroSoldado=new InfantryUnit();
         soldado.attack(otroSoldado);
         otroSoldado.attack(soldado);
         assertEquals(75,soldado.getHP(),0.01);
         assertEquals(75,otroSoldado.getHP(),0.01);
     }
     @Test
-    public void InfantryVSMonkTest(){
-        Infantry soldado=new Infantry();
+    public void InfantryUnitVSMonkTest(){
+        InfantryUnit soldado=new InfantryUnit();
         Monk monje=new Monk();
         monje.attack(soldado);
         soldado.attack(monje);
@@ -67,17 +67,17 @@ public class InfantryTest {
         assertFalse(monje.isAlive());
     }
     @Test
-    public void InfantryVSSiegeTest(){
-        Infantry soldado=new Infantry();
-        Siege catapulta=new Siege();
+    public void InfantryUnitVSSiegeUnitTest(){
+        InfantryUnit soldado=new InfantryUnit();
+        SiegeUnit catapulta=new SiegeUnit();
         soldado.attack(catapulta);
         catapulta.attack(soldado);
         assertEquals(25,soldado.getHP(),0.01);
         assertEquals(170,catapulta.getHP(),0.01);
     }
     @Test
-    public void InfantryVSVillager(){
-        Infantry soldado=new Infantry();
+    public void InfantryUnitVSVillager(){
+        InfantryUnit soldado=new InfantryUnit();
         Villager aldeano=new Villager();
         aldeano.attack(soldado);
         soldado.attack(aldeano);
@@ -85,9 +85,9 @@ public class InfantryTest {
         assertEquals(12.5,aldeano.getHP(),0.01);
     }
     @Test
-    public void InfantryDeathTest(){
-        Infantry soldado=new Infantry();
-        Siege catapulta=new Siege();
+    public void InfantryUnitDeathTest(){
+        InfantryUnit soldado=new InfantryUnit();
+        SiegeUnit catapulta=new SiegeUnit();
         Monk monje=new Monk();
         catapulta.attack(soldado);
         catapulta.attack(soldado);

@@ -5,19 +5,19 @@ public class Monk extends Unit {
         super(40,20);
     }
 
-    public void attackedByInfantry(Infantry enemy){
+    public void attackedByInfantryUnit(InfantryUnit enemy){
         this.die();
     }
-    public void attackedByArcher(Archer enemy){
+    public void attackedByArcherUnit(ArcherUnit enemy){
         this.die();
     }
 
-    public void attackedByCavalry(Cavalry enemy) {
+    public void attackedByCavalryUnit(CavalryUnit enemy) {
         this.die();
 
     }
 
-    public void attackedBySiege(Siege enemy) {
+    public void attackedBySiegeUnit(SiegeUnit enemy) {
         this.die();
 
     }

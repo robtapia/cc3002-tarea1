@@ -8,7 +8,7 @@ public class VillagerTest {
 
     }
     @Test
-    public void VillagerVsArcherTest(){
+    public void VillagerVsArcherUnitTest(){
 
     }
     @Test
@@ -20,11 +20,11 @@ public class VillagerTest {
 
     }
     @Test
-    public void VillagerVSCavalryTest(){
+    public void VillagerVSCavalryUnitTest(){
 
     }
     @Test
-    public void VillagerVSInfantryTest(){
+    public void VillagerVSInfantryUnitTest(){
 
     }
     @Test
@@ -32,7 +32,7 @@ public class VillagerTest {
 
     }
     @Test
-    public void VillagerVSSiegeTest(){
+    public void VillagerVSSiegeUnitTest(){
 
     }
     @Test

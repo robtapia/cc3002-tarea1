@@ -4,27 +4,27 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class CavalryTest {
+public class CavalryUnitTest {
 
 
     @Test
-    public void CavalryAttackTest() {
-        Cavalry caballeroA=new Cavalry();
-        Cavalry caballeroB=new Cavalry();
-        Cavalry caballeroC=new Cavalry();
-        Cavalry caballeroD=new Cavalry();
-        Cavalry caballeroE=new Cavalry();
-        Cavalry caballeroF=new Cavalry();
-        Cavalry caballeroG=new Cavalry();
-        Cavalry caballeroH=new Cavalry();
+    public void CavalryUnitAttackTest() {
+        CavalryUnit caballeroA=new CavalryUnit();
+        CavalryUnit caballeroB=new CavalryUnit();
+        CavalryUnit caballeroC=new CavalryUnit();
+        CavalryUnit caballeroD=new CavalryUnit();
+        CavalryUnit caballeroE=new CavalryUnit();
+        CavalryUnit caballeroF=new CavalryUnit();
+        CavalryUnit caballeroG=new CavalryUnit();
+        CavalryUnit caballeroH=new CavalryUnit();
 
-        Archer arquero=new Archer();
+        ArcherUnit arquero=new ArcherUnit();
         Barracks barraca= new Barracks();
         Castle castillo=new Castle();
-        Cavalry caballeria=new Cavalry();
-        Infantry soldado=new Infantry();
+        CavalryUnit caballeria=new CavalryUnit();
+        InfantryUnit soldado=new InfantryUnit();
         Monk monje=new Monk();
-        Siege catapulta=new Siege();
+        SiegeUnit catapulta=new SiegeUnit();
         Villager aldeano=new Villager();
 
 
@@ -86,16 +86,16 @@ public class CavalryTest {
 
     }
     @Test
-    public void CavalryCreationTest(){
-        Cavalry caballero=new Cavalry();
+    public void CavalryUnitCreationTest(){
+        CavalryUnit caballero=new CavalryUnit();
         assertEquals(150,caballero.getHP(),0.01);
         assertEquals(35,caballero.getAttackPoints(),0.01);
 
     }
     @Test
-    public void CavalryVsArcherTest(){
-        Cavalry caballero=new Cavalry();
-        Archer arquero=new Archer();
+    public void CavalryUnitVsArcherUnitTest(){
+        CavalryUnit caballero=new CavalryUnit();
+        ArcherUnit arquero=new ArcherUnit();
         caballero.attack(arquero);
         arquero.attack(caballero);
         assertEquals(130,caballero.getHP(),0.01);
@@ -103,8 +103,8 @@ public class CavalryTest {
 
     }
     @Test
-    public void CavalryVSBarracksTest(){
-        Cavalry caballero=new Cavalry();
+    public void CavalryUnitVSBarracksTest(){
+        CavalryUnit caballero=new CavalryUnit();
         Barracks barraca =new Barracks();
         caballero.attack(barraca);
         //
@@ -112,8 +112,8 @@ public class CavalryTest {
 
     }
     @Test
-    public void CavalryVSCastleTest(){
-        Cavalry caballero=new Cavalry();
+    public void CavalryUnitVSCastleTest(){
+        CavalryUnit caballero=new CavalryUnit();
         Castle castillo = new Castle();
         caballero.attack(castillo);
         castillo.attack(caballero);
@@ -121,9 +121,9 @@ public class CavalryTest {
         assertEquals(389.5,castillo.getHP(),0.01);
     }
     @Test
-    public void CavalryVSCavalryTest(){
-        Cavalry caballero=new Cavalry();
-        Cavalry otroCaballero=new Cavalry();
+    public void CavalryUnitVSCavalryUnitTest(){
+        CavalryUnit caballero=new CavalryUnit();
+        CavalryUnit otroCaballero=new CavalryUnit();
         caballero.attack(otroCaballero);
         otroCaballero.attack(caballero);
         assertEquals(115,caballero.getHP(),0.01);
@@ -131,17 +131,17 @@ public class CavalryTest {
 
     }
     @Test
-    public void CavalryVSInfantryTest(){
-        Cavalry caballero=new Cavalry();
-        Infantry soldado=new Infantry();
+    public void CavalryUnitVSInfantryUnitTest(){
+        CavalryUnit caballero=new CavalryUnit();
+        InfantryUnit soldado=new InfantryUnit();
         caballero.attack(soldado);
         soldado.attack(caballero);
         assertEquals(120,caballero.getHP(),0.01);
         assertEquals(65,soldado.getHP(),0.01);
     }
     @Test
-    public void CavalryVSMonkTest(){
-        Cavalry caballero=new Cavalry();
+    public void CavalryUnitVSMonkTest(){
+        CavalryUnit caballero=new CavalryUnit();
         Monk monje=new Monk();
         monje.attack(caballero);
         caballero.attack(monje);
@@ -151,17 +151,17 @@ public class CavalryTest {
 
     }
     @Test
-    public void CavalryVSSiegeTest(){
-        Cavalry caballero=new Cavalry();
-        Siege catapulta=new Siege();
+    public void CavalryUnitVSSiegeUnitTest(){
+        CavalryUnit caballero=new CavalryUnit();
+        SiegeUnit catapulta=new SiegeUnit();
         caballero.attack(catapulta);
         catapulta.attack(caballero);
         assertEquals(100,caballero.getHP(),0.01);
         assertEquals(158,catapulta.getHP(),0.01);
     }
     @Test
-    public void CavalryVSVillager(){
-        Cavalry caballero=new Cavalry();
+    public void CavalryUnitVSVillager(){
+        CavalryUnit caballero=new CavalryUnit();
         Villager aldeano=new Villager();
         aldeano.attack(caballero);
         caballero.attack(aldeano);
@@ -170,10 +170,10 @@ public class CavalryTest {
 
     }
     @Test
-    public void CavalryDeathTest(){
-        Cavalry caballero=new Cavalry();
+    public void CavalryUnitDeathTest(){
+        CavalryUnit caballero=new CavalryUnit();
         Monk monje=new Monk();
-        Siege catapulta=new Siege();
+        SiegeUnit catapulta=new SiegeUnit();
         catapulta.attack(caballero);
         catapulta.attack(caballero);
         catapulta.attack(caballero);

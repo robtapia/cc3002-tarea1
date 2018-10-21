@@ -1,24 +1,24 @@
 package CC3002.Tarea1.units;
 
-public class Siege extends Unit {
-    public Siege(){
+public class SiegeUnit extends Unit {
+    public SiegeUnit(){
         super(200,50);
 
     }
 
-    public void attackedByInfantry(Infantry enemy){
+    public void attackedByInfantryUnit(InfantryUnit enemy){
         this.doDamage(enemy,1.2);
     }
-    public void attackedByArcher(Archer enemy){
+    public void attackedByArcherUnit(ArcherUnit enemy){
         this.doDamage(enemy,0.8);
     }
 
-    public void attackedByCavalry(Cavalry enemy) {
+    public void attackedByCavalryUnit(CavalryUnit enemy) {
         this.doDamage(enemy,1.2);
 
     }
 
-    public void attackedBySiege(Siege enemy) {
+    public void attackedBySiegeUnit(SiegeUnit enemy) {
         this.doDamage(enemy,1.5);
 
     }
@@ -41,7 +41,7 @@ public class Siege extends Unit {
 
     public void attack(Attackable enemy) {
         if (this.isAlive()) {
-            enemy.attackedBySiege(this);
+            enemy.attackedBySiegeUnit(this);
         }
         else{
             return;

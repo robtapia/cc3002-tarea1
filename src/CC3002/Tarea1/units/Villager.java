@@ -7,19 +7,19 @@ public class Villager extends Unit {
 
 
 
-    public void attackedByInfantry(Infantry enemy){
+    public void attackedByInfantryUnit(InfantryUnit enemy){
         this.doDamage(enemy,1.5);
     }
-    public void attackedByArcher(Archer enemy){
+    public void attackedByArcherUnit(ArcherUnit enemy){
         this.doDamage(enemy,1.5);
     }
 
-    public void attackedByCavalry(Cavalry enemy) {
+    public void attackedByCavalryUnit(CavalryUnit enemy) {
         this.doDamage(enemy,1.5);
 
     }
 
-    public void attackedBySiege(Siege enemy) {
+    public void attackedBySiegeUnit(SiegeUnit enemy) {
         this.doDamage(enemy,1.5);
 
     }

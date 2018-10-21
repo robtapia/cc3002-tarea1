@@ -4,34 +4,34 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class ArcherTest {
+public class ArcherUnitTest {
 
     @Test
-    public void ArcherCreationTest(){
-        Archer arquero=new Archer();
+    public void ArcherUnitCreationTest(){
+        ArcherUnit arquero=new ArcherUnit();
         assertEquals(80,arquero.getHP(),0.01);
         assertEquals(20,arquero.getAttackPoints(),0.01);
     }
     @Test
-    public void ArcherVSArcherTest(){
-        Archer arqueroA=new Archer();
-        Archer arqueroB=new Archer();
+    public void ArcherUnitVSArcherUnitTest(){
+        ArcherUnit arqueroA=new ArcherUnit();
+        ArcherUnit arqueroB=new ArcherUnit();
         arqueroA.attack(arqueroB);
         arqueroB.attack(arqueroA);
         assertEquals(56,arqueroA.getHP(),0.01);
         assertEquals(56,arqueroB.getHP(),0.01);
     }
     @Test
-    public void ArcherVSBarracksTest(){
-        Archer arquero=new Archer();
+    public void ArcherUnitVSBarracksTest(){
+        ArcherUnit arquero=new ArcherUnit();
         Barracks barraca=new Barracks();
         arquero.attack(barraca);
         //
         assertEquals(286,barraca.getHP(),0.01);
     }
     @Test
-    public void ArcherVSCastleTest(){
-        Archer arquero=new Archer();
+    public void ArcherUnitVSCastleTest(){
+        ArcherUnit arquero=new ArcherUnit();
         Castle castillo=new Castle();
         arquero.attack(castillo);
         castillo.attack(arquero);
@@ -40,9 +40,9 @@ public class ArcherTest {
 
     }
     @Test
-    public void ArcherVSCavalryTest(){
-        Archer arquero=new Archer();
-        Cavalry caballero=new Cavalry();
+    public void ArcherUnitVSCavalryUnitTest(){
+        ArcherUnit arquero=new ArcherUnit();
+        CavalryUnit caballero=new CavalryUnit();
         arquero.attack(caballero);
         caballero.attack(arquero);
         assertEquals(27.5,arquero.getHP(),0.01);
@@ -50,35 +50,35 @@ public class ArcherTest {
 
     }
     @Test
-    public void ArcherVSInfantryTest(){
-        Archer arquero=new Archer();
-        Infantry soldado=new Infantry();
+    public void ArcherUnitVSInfantryUnitTest(){
+        ArcherUnit arquero=new ArcherUnit();
+        InfantryUnit soldado=new InfantryUnit();
         arquero.attack(soldado);
         soldado.attack(arquero);
         assertEquals(50,arquero.getHP(),0.01);
         assertEquals(76,soldado.getHP(),0.01);
     }
     @Test
-    public void ArcherVSMonkTest(){
+    public void ArcherUnitVSMonkTest(){
         Monk monje=new Monk();
-        Archer arquero=new Archer();
+        ArcherUnit arquero=new ArcherUnit();
         monje.attack(arquero);
         arquero.attack(monje);
         assertEquals(90,arquero.getHP(),0.01);
         assertEquals(0,monje.getHP(),0.01);
     }
     @Test
-    public void ArcherVSSiegeTest(){
-        Archer arquero=new Archer();
-        Siege catapulta=new Siege();
+    public void ArcherUnitVSSiegeUnitTest(){
+        ArcherUnit arquero=new ArcherUnit();
+        SiegeUnit catapulta=new SiegeUnit();
         arquero.attack(catapulta);
         catapulta.attack(arquero);
         assertEquals(5,arquero.getHP(),0.01);
         assertEquals(184,catapulta.getHP(),0.01);
     }
     @Test
-    public void ArcherVSVillagerTest(){
-        Archer arquero=new Archer();
+    public void ArcherUnitVSVillagerTest(){
+        ArcherUnit arquero=new ArcherUnit();
         Villager aldeano=new Villager();
         arquero.attack(aldeano);
         aldeano.attack(arquero);
@@ -86,8 +86,8 @@ public class ArcherTest {
         assertEquals(20,aldeano.getHP(),0.01);
     }
     @Test
-    public void ArcherDead(){
-        Archer arquero=new Archer();
+    public void ArcherUnitDead(){
+        ArcherUnit arquero=new ArcherUnit();
         Castle castillo=new Castle();
         arquero.attack(castillo);
         castillo.attack(arquero);

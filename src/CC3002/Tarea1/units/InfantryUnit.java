@@ -1,28 +1,31 @@
 package CC3002.Tarea1.units;
 
-public class Cavalry extends Unit {
-    public Cavalry(){
-        super(150,35);
+
+
+public class InfantryUnit extends Unit {
+    public InfantryUnit(){
+        super(100,25);
+
     }
-    public void attackedByInfantry(Infantry enemy){
+    public void attackedByInfantryUnit(InfantryUnit enemy){
+        this.doDamage(enemy,1.0);
+    }
+    public void attackedByArcherUnit(ArcherUnit enemy){
         this.doDamage(enemy,1.2);
     }
-    public void attackedByArcher(Archer enemy){
-        this.doDamage(enemy,1.0);
-    }
 
-    public void attackedByCavalry(Cavalry enemy) {
+    public void attackedByCavalryUnit(CavalryUnit enemy) {
         this.doDamage(enemy,1.0);
 
     }
 
-    public void attackedBySiege(Siege enemy) {
-        this.doDamage(enemy,1);
+    public void attackedBySiegeUnit(SiegeUnit enemy) {
+        this.doDamage(enemy,1.5);
 
     }
 
     public void attackedByVillager(Villager enemy) {
-        this.doDamage(enemy,0.5);
+        this.doDamage(enemy,0.8);
 
     }
     public void attackedByMonk(Monk ally) {
@@ -39,11 +42,12 @@ public class Cavalry extends Unit {
 
     public void attack(Attackable enemy) {
         if (this.isAlive()) {
-            enemy.attackedByCavalry(this);
+            enemy.attackedByInfantryUnit(this);
         }
         else{
             return;
         }
     }
+
 
 }

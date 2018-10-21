@@ -1,12 +1,12 @@
 package CC3002.Tarea1.units;
 
-public class Archer extends Unit {
-    public Archer(){
+public class ArcherUnit extends Unit {
+    public ArcherUnit(){
         super(80,20);
     }
     public void attack(Attackable enemy) {
         if (this.isAlive()) {
-            enemy.attackedByArcher(this);
+            enemy.attackedByArcherUnit(this);
         }
         else{
             return;
@@ -15,19 +15,19 @@ public class Archer extends Unit {
 
 
 
-    public void attackedByInfantry(Infantry enemy){
+    public void attackedByInfantryUnit(InfantryUnit enemy){
         this.doDamage(enemy,1.2);
     }
-    public void attackedByArcher(Archer enemy){
+    public void attackedByArcherUnit(ArcherUnit enemy){
         this.doDamage(enemy,1.2);
     }
 
-    public void attackedByCavalry(Cavalry enemy) {
+    public void attackedByCavalryUnit(CavalryUnit enemy) {
         this.doDamage(enemy,1.5);
 
     }
 
-    public void attackedBySiege(Siege enemy) {
+    public void attackedBySiegeUnit(SiegeUnit enemy) {
         this.doDamage(enemy,1.5);
 
     }

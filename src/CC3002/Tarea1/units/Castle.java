@@ -20,19 +20,19 @@ public class Castle extends Building implements Attacker{
         return this.attackPoints;
     }
 
-    public void attackedByInfantry(Infantry enemy){
+    public void attackedByInfantryUnit(InfantryUnit enemy){
         this.doDamage(enemy,0.3);
     }
-    public void attackedByArcher(Archer enemy){
+    public void attackedByArcherUnit(ArcherUnit enemy){
         this.doDamage(enemy,0.1);
     }
 
-    public void attackedByCavalry(Cavalry enemy) {
+    public void attackedByCavalryUnit(CavalryUnit enemy) {
         this.doDamage(enemy,0.3);
 
     }
 
-    public void attackedBySiege(Siege enemy) {
+    public void attackedBySiegeUnit(SiegeUnit enemy) {
         this.doDamage(enemy,2);
 
     }

@@ -18,13 +18,13 @@ public class MonkTest {
         Monk monjeG=new Monk();
         Monk monjeH=new Monk();
 
-        Archer arquero=new Archer();
+        ArcherUnit arquero=new ArcherUnit();
         Barracks barraca= new Barracks();
         Castle castillo=new Castle();
-        Cavalry caballeria=new Cavalry();
-        Infantry soldado=new Infantry();
+        CavalryUnit caballeria=new CavalryUnit();
+        InfantryUnit soldado=new InfantryUnit();
         Monk monje=new Monk();
-        Siege catapulta=new Siege();
+        SiegeUnit catapulta=new SiegeUnit();
         Villager aldeano=new Villager();
 
 
@@ -93,9 +93,9 @@ public class MonkTest {
         assertEquals(20,monje.getAttackPoints(),0.01);
     }
     @Test
-    public void MonkVsArcherTest(){
+    public void MonkVsArcherUnitTest(){
         Monk monje=new Monk();
-        Archer arquero=new Archer();
+        ArcherUnit arquero=new ArcherUnit();
         monje.attack(arquero);
         arquero.attack(monje);
         assertEquals(0,monje.getHP(),0.01);
@@ -121,18 +121,18 @@ public class MonkTest {
 
     }
     @Test
-    public void MonkVSCavalryTest(){
+    public void MonkVSCavalryUnitTest(){
         Monk monje=new Monk();
-        Cavalry caballeria=new Cavalry();
+        CavalryUnit caballeria=new CavalryUnit();
         monje.attack(caballeria);
         caballeria.attack(monje);
         assertEquals(0,monje.getHP(),0.01);
         assertEquals(160,caballeria.getHP(),0.01);
     }
     @Test
-    public void MonkVSInfantryTest(){
+    public void MonkVSInfantryUnitTest(){
         Monk monje=new Monk();
-        Infantry soldado=new Infantry();
+        InfantryUnit soldado=new InfantryUnit();
         monje.attack(soldado);
         soldado.attack(monje);
         assertEquals(0,monje.getHP(),0.01);
@@ -157,9 +157,9 @@ public class MonkTest {
 
     }
     @Test
-    public void MonkVSSiegeTest(){
+    public void MonkVSSiegeUnitTest(){
         Monk monje=new Monk();
-        Siege catapulta=new Siege();
+        SiegeUnit catapulta=new SiegeUnit();
         monje.attack(catapulta);
         catapulta.attack(monje);
         assertEquals(0,monje.getHP(),0.01);
@@ -177,7 +177,7 @@ public class MonkTest {
     @Test
     public void MonkDeathTest(){
         Monk monje=new Monk();
-        Infantry soldado=new Infantry();
+        InfantryUnit soldado=new InfantryUnit();
         Monk otroMonje=new Monk();
         soldado.attack(monje);
         assertEquals(0,monje.getHP(),0.01);

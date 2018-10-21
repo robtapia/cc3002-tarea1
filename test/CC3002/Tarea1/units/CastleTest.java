@@ -13,9 +13,9 @@ public class CastleTest {
         assertEquals(50, castillo.getAttackPoints(), 0.01);
     }
     @Test
-    public void CastleVsArcherTest(){
+    public void CastleVsArcherUnitTest(){
         Castle castillo = new Castle();
-        Archer arquero = new Archer();
+        ArcherUnit arquero = new ArcherUnit();
         castillo.attack(arquero);
         arquero.attack(castillo);
         assertEquals(398, castillo.getHP(), 0.01);
@@ -39,9 +39,9 @@ public class CastleTest {
         assertEquals(395, castillo.getHP(), 0.01);
     }
     @Test
-    public void CastleVSCavalryTest(){
+    public void CastleVSCavalryUnitTest(){
         Castle castillo = new Castle();
-        Cavalry caballeria = new Cavalry();
+        CavalryUnit caballeria = new CavalryUnit();
         castillo.attack(caballeria);
         caballeria.attack(castillo);
         assertEquals(389.5, castillo.getHP(), 0.01);
@@ -49,9 +49,9 @@ public class CastleTest {
 
     }
     @Test
-    public void CastleVSInfantryTest(){
+    public void CastleVSInfantryUnitTest(){
         Castle castillo = new Castle();
-        Infantry soldado=new Infantry();
+        InfantryUnit soldado=new InfantryUnit();
         castillo.attack(soldado);
         soldado.attack(castillo);
         assertEquals(392.5, castillo.getHP(), 0.01);
@@ -68,9 +68,9 @@ public class CastleTest {
         assertFalse(monje.isAlive());
     }
     @Test
-    public void CastleVSSiegeTest(){
+    public void CastleVSSiegeUnitTest(){
         Castle castillo = new Castle();
-        Siege catapulta=new Siege();
+        SiegeUnit catapulta=new SiegeUnit();
         castillo.attack(catapulta);
         catapulta.attack(castillo);
         assertEquals(300, castillo.getHP(), 0.01);
@@ -80,7 +80,7 @@ public class CastleTest {
     public void CastleVSVillager(){
         Castle castillo=new Castle();
         Villager aldeano=new Villager();
-        Infantry soldado=new Infantry();
+        InfantryUnit soldado=new InfantryUnit();
         aldeano.attack(castillo);
         assertEquals(400,castillo.getHP(),0.01);
         soldado.attack(castillo);
@@ -93,7 +93,7 @@ public class CastleTest {
     @Test
     public void CastleDeathTest(){
         Castle castillo = new Castle();
-        Siege catapulta=new Siege();
+        SiegeUnit catapulta=new SiegeUnit();
         Villager aldeano=new Villager();
         catapulta.attack(castillo);
         catapulta.attack(castillo);

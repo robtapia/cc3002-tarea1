@@ -16,7 +16,7 @@ public class BarracksTest {
     @Test
     public void BarrackDeathTest(){
         Barracks barraca=new Barracks();
-        Siege catapulta=new Siege();
+        SiegeUnit catapulta=new SiegeUnit();
         Villager aldeano=new Villager();
 
         catapulta.attack(barraca);
