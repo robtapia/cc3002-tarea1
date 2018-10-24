@@ -7,7 +7,7 @@ package CC3002.Tarea1.units;
 
 public abstract class Unit extends Entity implements Attacker {
 
-    int attackPoints;
+    private int attackPoints;
 
     /**
      * Constructor de la clase, crea un objeto Unit

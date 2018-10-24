@@ -5,7 +5,7 @@ package CC3002.Tarea1.units;
  * @author Roberto Tapia
  */
 public class Castle extends Building implements Attacker{
-    double attackPoints;
+    private double attackPoints;
 
     /**
      * Constructor de la clase, crea un objeto Castle

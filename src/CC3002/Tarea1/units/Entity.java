@@ -7,10 +7,10 @@ package CC3002.Tarea1.units;
  */
 
 public abstract class Entity implements Attackable {
-    double initialHP;
-    double currentHP;
-    double maxHP;
-    boolean alive;
+    private double initialHP;
+    private double currentHP;
+    private double maxHP;
+    private boolean alive;
 
     /**
      * Constructor de la clase, crea un objeto Entity
