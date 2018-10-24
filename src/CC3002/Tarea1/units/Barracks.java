@@ -5,7 +5,7 @@ package CC3002.Tarea1.units;
  * @author Roberto
  */
 
-public class Barracks extends Building implements Attackable {
+public class Barracks extends Building{
 
     /**
      * Constructor de la clase, crea un objeto Barracks

@@ -5,7 +5,7 @@ package CC3002.Tarea1.units;
  * @author Roberto Tapia
  */
 
-public abstract class Unit extends Entity implements Attackable, Attacker {
+public abstract class Unit extends Entity implements Attacker {
 
     int attackPoints;
 
