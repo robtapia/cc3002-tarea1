@@ -1,6 +1,15 @@
 package CC3002.Tarea1.units;
 
+/**
+ * Modela el comportamiento de una unidad de Caballeria
+ * @author Roberto Tapia
+ */
+
 public class CavalryUnit extends Unit {
+
+    /**
+     * Constructor de la clase, crea un objeto CavalryUnit
+     */
     public CavalryUnit(){
         super(150,35);
     }

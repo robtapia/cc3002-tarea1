@@ -1,6 +1,15 @@
 package CC3002.Tarea1.units;
 
+/**
+ * Representa un edificio del tipo barracks
+ * @author Roberto
+ */
+
 public class Barracks extends Building implements Attackable {
+
+    /**
+     * Constructor de la clase, crea un objeto Barracks
+     */
     public Barracks(){
         super(300);
     }

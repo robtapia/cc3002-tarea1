@@ -1,6 +1,15 @@
 package CC3002.Tarea1.units;
 
+
+/**
+ * Modela el comportamiento de los aldeanos
+ * @author Roberto Tapia
+ */
 public class Villager extends Unit {
+
+    /**
+     * Constructor de la clase, crea un objeto Villager
+     */
     public Villager(){
         super(50,20);
     }

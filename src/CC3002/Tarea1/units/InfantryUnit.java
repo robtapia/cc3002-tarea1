@@ -1,8 +1,14 @@
 package CC3002.Tarea1.units;
 
-
+/**
+ * Modela el comportamiento de una unidad de infanteria
+ * @author Roberto Tapia
+ */
 
 public class InfantryUnit extends Unit {
+    /**
+     * constructor de la clase, crea un objeto InfantryUnit
+     */
     public InfantryUnit(){
         super(100,25);
 

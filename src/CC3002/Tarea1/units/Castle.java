@@ -1,7 +1,15 @@
 package CC3002.Tarea1.units;
 
+/**
+ * Modela el comportamiento de un Castillo
+ * @author Roberto Tapia
+ */
 public class Castle extends Building implements Attacker{
     double attackPoints;
+
+    /**
+     * Constructor de la clase, crea un objeto Castle
+     */
     public Castle(){
         super(400);
         attackPoints=50;

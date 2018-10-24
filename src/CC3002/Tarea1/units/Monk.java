@@ -1,6 +1,13 @@
 package CC3002.Tarea1.units;
 
+/**
+ * Modela el comportamiento de un monje
+ * @author Roberto Tapia
+ */
 public class Monk extends Unit {
+    /**
+     * Constructor de la clase, crea un objeto Monk
+     */
     public Monk(){
         super(40,20);
     }

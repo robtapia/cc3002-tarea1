@@ -1,6 +1,13 @@
 package CC3002.Tarea1.units;
 
+/**
+ * Modela el comportamiento de una unidad de asedio
+ * @author Roberto Tapia
+ */
 public class SiegeUnit extends Unit {
+    /**
+     * Constructor de la clase, crea un objeto SiegeUnit
+     */
     public SiegeUnit(){
         super(200,50);
 
